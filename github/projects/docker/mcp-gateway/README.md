@@ -9,11 +9,11 @@
 
 | Issue # | Title | Status | Problem Reference |
 |---------|-------|--------|-------------------|
-| [#186](https://github.com/docker/mcp-gateway/issues/186) | Tool Name Prefixes for MCP Server Identification | Open | [Docker MCP Toolkit Token Usage](../problems/docker-mcp-toolkit-token-usage/) |
-| [#187](https://github.com/docker/mcp-gateway/issues/187) | Meta-MCP Server for Tool Discovery and Filtering | Open | [Docker MCP Toolkit Token Usage](../problems/docker-mcp-toolkit-token-usage/) |
+| [#186](https://github.com/docker/mcp-gateway/issues/186) | Tool Name Prefixes for MCP Server Identification | Open | [Docker MCP Toolkit Token Usage](../../problems/docker-mcp-toolkit-token-usage/) |
+| [#187](https://github.com/docker/mcp-gateway/issues/187) | Meta-MCP Server for Tool Discovery and Filtering | Open | [Docker MCP Toolkit Token Usage](../../problems/docker-mcp-toolkit-token-usage/) |
 
 ## Related Problems
-- **[Docker MCP Toolkit Token Usage](../problems/docker-mcp-toolkit-token-usage/)**: Investigation into token usage issues, IDE limits, and tool organization problems with the Docker MCP Toolkit
+- **[Docker MCP Toolkit Token Usage](../../problems/docker-mcp-toolkit-token-usage/)**: Investigation into token usage issues, IDE limits, and tool organization problems with the Docker MCP Toolkit
 
 ## Project Activity
 - **Last Updated**: 2025-10-16

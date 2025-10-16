@@ -39,8 +39,8 @@ description: Investigate and document a problem, find/create GitHub issues
 - Maintain clear links between related items
 
 ## Step 6.5: Create Issue Drafts
-- For new issues, create draft files in projects/[project/path]/issues/ folder structure
-- Use project path from GitHub repository (e.g., projects/docker/mcp-gateway/issues/)
+- For new issues, create draft files in platform-specific folder structure
+- Use platform/project path from repository (e.g., github/projects/docker/mcp-gateway/issues/)
 - Include issue number placeholders for future tracking (e.g., 001-issue-title.md)
 - Cross-reference with problem documentation
 
@@ -53,8 +53,8 @@ description: Investigate and document a problem, find/create GitHub issues
 - Create/update project README.md with issue references
 
 ## Step 8: Create Project Index (if needed)
-- Create projects/[project]/README.md with project overview
-- Include links to GitHub repository, submitted issues, and related problems
+- Create platform/projects/[project]/README.md with project overview
+- Include links to repository, submitted issues, and related problems
 - Maintain index of all issues submitted for the project
 - Update when new issues are created
 

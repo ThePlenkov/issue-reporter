@@ -36,9 +36,9 @@ This problem could be addressed through multiple separate issues:
 problems/docker-mcp-toolkit-token-usage/
 ├── README.md                    # Problem summary and analysis + issue status table
 ├── cross-references.md         # This file - external links and relationships
-└── [links to issue drafts in projects/ folder]
+└── [links to issue drafts in github/projects/ folder]
 
-projects/docker/mcp-gateway/
+github/projects/docker/mcp-gateway/
 ├── README.md                    # Project index with issue references
 └── issues/
     ├── 186-tool-name-prefixes.md           # Issue #186 draft
