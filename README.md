@@ -15,7 +15,7 @@ A workflow-based approach to investigating problems and managing issues across d
 
 ## 🤖 How It Works
 
-1. **Define Workflow**: Create a step-by-step investigation process (see `.windsurf/workflows/problem.md`)
+1. **Define Workflow**: Create a step-by-step investigation process (see [`.windsurf/workflows/problem.md`](.windsurf/workflows/problem.md))
 2. **AI Executes**: AI follows the workflow, doing research and documentation
 3. **Document & Track**: Everything is organized and tracked for future reference
 
@@ -80,7 +80,7 @@ The `/problem` workflow guides you through these steps:
 7. **Submit**: Post issues to target platforms (with approval)
 8. **Track**: Monitor responses and update status
 
-See `.windsurf/workflows/problem.md` for the complete workflow.
+See [`.windsurf/workflows/problem.md`](.windsurf/workflows/problem.md) for the complete workflow.
 
 ## 🛠️ Tools and Features
 
@@ -104,14 +104,15 @@ See `.windsurf/workflows/problem.md` for the complete workflow.
 
 ## 📋 Example
 
-See `problems/docker-mcp-toolkit-token-usage/` for a real example:
+See [`problems/docker-mcp-toolkit-token-usage/`](problems/docker-mcp-toolkit-token-usage/) for a real example:
 
 1. Started with `/problem` workflow
 2. Investigated Docker MCP Toolkit token usage issues
 3. Researched existing solutions and related projects
-4. Created two well-documented feature requests
-5. Submitted to docker/mcp-gateway as issues #186 and #187
-6. Tracking status and maintainer responses
+4. Created two well-documented feature requests:
+   - [Issue #186: Tool Name Prefixes](github/projects/docker/mcp-gateway/issues/186-tool-name-prefixes.md) ([live on GitHub](https://github.com/docker/mcp-gateway/issues/186))
+   - [Issue #187: Meta-MCP Server](github/projects/docker/mcp-gateway/issues/187-meta-mcp-server.md) ([live on GitHub](https://github.com/docker/mcp-gateway/issues/187))
+5. Tracking status in [problem documentation](problems/docker-mcp-toolkit-token-usage/README.md)
 
 The investigation is fully documented and can be referenced later.
 
@@ -120,7 +121,7 @@ The investigation is fully documented and can be referenced later.
 This system is designed to be extensible and customizable:
 
 1. **Add New Platforms**: Create `platform/projects/` directories with appropriate structure
-2. **Customize Workflows**: Modify `.windsurf/workflows/problem.md` for your needs
+2. **Customize Workflows**: Modify [`.windsurf/workflows/problem.md`](.windsurf/workflows/problem.md) for your needs
 3. **Extend Templates**: Add platform-specific issue templates and automation
 
 ## 📊 Current Status
