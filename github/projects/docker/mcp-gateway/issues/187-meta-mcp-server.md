@@ -66,6 +66,41 @@ get_tool_details github:create_issue
 
 The meta-server maintains a lightweight registry of available tools without loading full descriptions upfront.
 
+## Relationship to Existing Solutions
+
+### Acknowledgment
+The [MCP Gateway & Registry](https://github.com/agentic-community/mcp-gateway-registry) project already implements many of these concepts for enterprise environments. This proposal is **complementary** and focuses on different use cases.
+
+### Key Differences
+
+| Aspect | MCP Gateway & Registry | This Proposal |
+|--------|----------------------|---------------|
+| **Target** | Enterprise teams | Individual developers |
+| **Deployment** | Separate infrastructure | Native Docker Desktop |
+| **Complexity** | Full-featured gateway | Simplified core features |
+| **Integration** | Standalone service | Built into `docker mcp` CLI |
+| **Auth** | OAuth 2LO/3LO | Local Docker auth |
+| **Use Case** | Multi-tenant, governed access | Personal productivity |
+
+### Proposed Approach
+
+Rather than competing with MCP Gateway & Registry, this proposal suggests:
+
+1. **Native Integration**: Build lightweight discovery features into Docker MCP Toolkit
+2. **CLI-First**: Optimize for `docker mcp` command-line workflows
+3. **Local-First**: No external infrastructure required
+4. **Inspiration**: Learn from MCP Gateway & Registry's excellent design
+5. **Complementary**: Could work alongside enterprise solutions
+
+### Alternative: Contribute to Existing Projects
+
+If the Docker team prefers, these features could potentially be:
+- Contributed to MCP Gateway & Registry as a "lite" mode
+- Implemented as a simplified wrapper around existing tools
+- Designed to interoperate with enterprise solutions
+
+The goal is better developer experience, not reinventing the wheel.
+
 ## Related Issues
 - **MCP Gateway & Registry**: [agentic-community/mcp-gateway-registry](https://github.com/agentic-community/mcp-gateway-registry) - Enterprise-ready MCP gateway with dynamic tool discovery, registry functionality, and unified access (directly implements the proposed meta-MCP server concept)
 - **MCP Gateway & Registry Docs**: [agentic-community.github.io/mcp-gateway-registry](https://agentic-community.github.io/mcp-gateway-registry/) - Dynamic tool discovery and runtime MCP server enumeration features

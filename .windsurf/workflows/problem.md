@@ -1,5 +1,5 @@
 ---
-description: Investigate and document a problem, find/create GitHub issues
+description: Investigate and document a problem, find/create issues on any platform
 ---
 
 # Problem Investigation Workflow
@@ -11,9 +11,13 @@ description: Investigate and document a problem, find/create GitHub issues
 - Gather error messages, logs, reproduction steps
 - Note environment details (OS, versions, etc.)
 
-## Step 2: Find Relevant GitHub Projects
-- Based on problem details, identify potential GitHub repositories
-- Search GitHub for related projects using keywords
+## Step 2: Find Relevant Projects and Platforms
+- Based on problem details, identify appropriate platforms:
+  - GitHub/GitLab repositories for code issues
+  - Reddit/Discord for community discussions
+  - Forums/StackOverflow for technical questions
+  - Documentation sites for specification proposals
+- Search each platform for related projects using keywords
 - Verify project relevance and activity status
 
 ## Step 3: Search Existing Issues
@@ -45,7 +49,7 @@ description: Investigate and document a problem, find/create GitHub issues
 - Cross-reference with problem documentation
 
 ## Step 7: Submit Issues (if approved)
-- Submit drafted issues to GitHub repositories using available tools
+- Submit drafted issues to target platforms using available tools (GitHub, GitLab, etc.)
 - Capture actual issue numbers upon successful submission
 - Rename draft files to use actual issue numbers (e.g., 186-tool-name-prefixes.md)
 - Update all cross-references in problem documentation with actual issue links
@@ -57,5 +61,32 @@ description: Investigate and document a problem, find/create GitHub issues
 - Include links to repository, submitted issues, and related problems
 - Maintain index of all issues submitted for the project
 - Update when new issues are created
+
+## Step 9: Monitor and Learn
+- Track issue responses and maintainer feedback
+- Update problem documentation with new insights
+- Document resolution status and timeline
+- Extract lessons learned for future investigations
+- Refine workflow based on outcomes
+
+### Monitoring Checklist
+- [ ] Set up notifications for issue updates
+- [ ] Review maintainer comments weekly
+- [ ] Update status table with latest information
+- [ ] Document any workarounds or solutions provided
+- [ ] Note response time and engagement level
+
+### Learning Outcomes
+- What worked well in this investigation?
+- What could be improved for next time?
+- Were there missing pieces of information?
+- How accurate were our initial assessments?
+- What new patterns or insights emerged?
+
+### Workflow Refinement
+- Update investigation templates based on feedback
+- Add new research sources discovered
+- Improve issue drafting based on maintainer responses
+- Enhance cross-referencing techniques
 
 // turbo
