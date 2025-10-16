@@ -1,54 +1,48 @@
-# AI-First Problem Investigation & Issue Management System
+# AI-Assisted Problem Investigation & Issue Management
 
-> **Demonstrating AI-Driven Workflow Development**  
-> This entire system—workflows, structure, and documentation—was created using AI agents (initially Grok, now Windsurf/Cascade). It proves that AI can design systematic processes, not just execute tasks.
+> **A practical demonstration of AI-driven workflows**  
+> This project was created using AI agents (initially Grok, now Windsurf/Cascade) to show how defining workflows first, then executing them with AI assistance, can speed up problem investigation and issue management.
 
-## 🤖 The Revolutionary Approach
+## 🎯 What This Is
 
-### Traditional Problem-Solving
-1. Encounter problem → 2. Create ad-hoc issue → 3. Hope for response
+A workflow-based approach to investigating problems and managing issues across different platforms (GitHub, GitLab, Reddit, forums, etc.).
 
-### AI-First Workflow-Driven Approach
-1. **AI Designs Workflow** → 2. **AI Executes Systematically** → 3. **AI Documents & Learns**
+**The idea**: Instead of ad-hoc issue creation, use a structured workflow that:
+- Guides systematic problem investigation
+- Researches existing solutions before creating new issues
+- Documents findings in a reusable format
+- Tracks issue status across platforms
 
-## 🎯 Why This Changes Everything
+## 🤖 How It Works
 
-**Before**: Issue management was manual, inconsistent, platform-specific  
-**After**: AI creates reusable workflows that work across any platform
+1. **Define Workflow**: Create a step-by-step investigation process (see `.windsurf/workflows/problem.md`)
+2. **AI Executes**: AI follows the workflow, doing research and documentation
+3. **Document & Track**: Everything is organized and tracked for future reference
 
-### Core Innovation
-- **Workflow-as-Code**: AI writes the investigation process itself
-- **Platform Agnostic**: Works with GitHub, GitLab, Reddit, forums, Discord—any platform
-- **Self-Improving**: Each investigation refines the workflow
-- **Knowledge Capture**: Tacit knowledge becomes explicit and reusable
+### Key Features
 
-### What This System Does
+- **Structured Investigation**: Follow a consistent process instead of random searching
+- **Multi-Platform**: Works with GitHub, GitLab, Reddit, forums—wherever you need to post
+- **Research First**: Find existing solutions and related work before creating issues
+- **Status Tracking**: Keep track of submitted issues and their progress
+- **Reusable Knowledge**: Investigations become documentation for future reference
 
-1. **Systematic Investigation**: AI-designed workflow ensures thorough analysis
-2. **Comprehensive Research**: Automatically finds existing solutions and related work
-3. **Multi-Platform Support**: Submit to GitHub, discuss on Reddit, document everywhere
-4. **Status Tracking**: Follow issues from creation through resolution
-5. **Continuous Learning**: Workflows improve based on outcomes
+## 🚀 Why Use This
 
-## 🚀 How It Helps
+### Saves Time
+- Don't lose track of what you investigated
+- Avoid creating duplicate issues (research existing ones first)
+- Reuse investigation work for similar problems later
 
-### For Individual Developers
-- **Never Lose Track**: Complete documentation of problems and their status
-- **Research First**: Automatically find existing solutions before creating duplicate issues
-- **Professional Workflow**: Structured approach that scales from simple bugs to complex features
-- **Multi-Platform**: Manage issues across GitHub, GitLab, forums, and community platforms
+### Better Quality
+- Structured approach ensures you don't miss important details
+- Well-researched issues are more likely to get maintainer attention
+- Documentation helps you and others understand the problem later
 
-### For Teams
-- **Knowledge Sharing**: Documented investigations become team knowledge
-- **Process Consistency**: Standardized workflows across team members
-- **Status Transparency**: Clear visibility into issue progress and blockers
-- **Scalable Organization**: Handles simple bugs to complex multi-repo investigations
-
-### For Open Source Maintainers
-- **Better Issue Quality**: Well-researched issues with comprehensive context
-- **Reduced Duplicates**: Systematic checking of existing issues and solutions
-- **Clearer Communication**: Structured problem descriptions with all necessary context
-- **Easier Triage**: Status tracking and cross-references help prioritize work
+### Works Anywhere
+- Not limited to GitHub—use with any platform
+- Same workflow for bugs, features, community discussions
+- Organize investigations across multiple projects
 
 ## 📁 Project Structure
 
@@ -73,32 +67,20 @@ The structure supports expansion to other platforms:
 - `reddit/posts/` - Community discussions and feature requests
 - `discord/channels/` - Community support and discussions
 
-## 🔄 The Problem Investigation Workflow
+## 🔄 The Workflow
 
-### Step 1: Gather Problem Details
-- Complete problem description and reproduction steps
-- Environment details and affected systems
-- Expected vs actual behavior analysis
+The `/problem` workflow guides you through these steps:
 
-### Step 2: Find Relevant Projects
-- Identify appropriate repositories/platforms
-- Research existing solutions and workarounds
-- Cross-reference with related issues
+1. **Gather Details**: Describe the problem, reproduction steps, environment
+2. **Find Projects**: Identify relevant repositories or platforms
+3. **Search Existing**: Look for similar issues and existing solutions
+4. **Analyze**: Document findings and potential workarounds
+5. **Draft Issues**: Create well-researched issue drafts (if needed)
+6. **Register Problem**: Document in `problems/` folder with status tracking
+7. **Submit**: Post issues to target platforms (with approval)
+8. **Track**: Monitor responses and update status
 
-### Step 3: Analyze and Document
-- Structured problem documentation
-- Impact assessment and priority evaluation
-- Solution research and feasibility analysis
-
-### Step 4: Draft Issues (if needed)
-- Platform-specific issue templates
-- Comprehensive context and reproduction steps
-- Links to related work and existing solutions
-
-### Step 5: Submit and Track
-- Automated issue submission to target platforms
-- Status tracking from submission to resolution
-- Update documentation as issues progress
+See `.windsurf/workflows/problem.md` for the complete workflow.
 
 ## 🛠️ Tools and Features
 
@@ -120,44 +102,18 @@ The structure supports expansion to other platforms:
 - **Community**: Reddit posts, Discord threads, forums
 - **Extensible**: Easy to add new platforms
 
-## 📋 Example Usage
+## 📋 Example
 
-### Investigating a Docker MCP Toolkit Issue
+See `problems/docker-mcp-toolkit-token-usage/` for a real example:
 
-1. **Start Investigation**:
-   ```bash
-   /problem "Docker MCP Toolkit token usage issues"
-   ```
+1. Started with `/problem` workflow
+2. Investigated Docker MCP Toolkit token usage issues
+3. Researched existing solutions and related projects
+4. Created two well-documented feature requests
+5. Submitted to docker/mcp-gateway as issues #186 and #187
+6. Tracking status and maintainer responses
 
-2. **Follow Workflow**:
-   - Describe the problem (token consumption, IDE limits)
-   - Research existing solutions (mcp-filter, MCP Gateway & Registry)
-   - Find relevant repositories (docker/mcp-gateway)
-   - Draft comprehensive issues with full context
-
-3. **Track Progress**:
-   - Issues submitted: #186, #187
-   - Status tracking in problem documentation
-   - Updates as maintainers respond
-
-4. **Result**: Two well-researched feature requests submitted to Docker with complete context and existing solution analysis.
-
-## 🎯 Key Principles
-
-### Research First
-- Always check for existing solutions before creating new issues
-- Cross-reference with related work and implementations
-- Provide comprehensive context to maintainers
-
-### Structured Documentation
-- Complete problem analysis in dedicated folders
-- Status tracking tables for all submitted issues
-- Cross-platform references and relationships
-
-### Professional Workflow
-- Systematic approach to problem investigation
-- Comprehensive issue templates with all context
-- Long-term tracking from submission to resolution
+The investigation is fully documented and can be referenced later.
 
 ## 🤝 Contributing
 
@@ -169,14 +125,12 @@ This system is designed to be extensible and customizable:
 
 ## 📊 Current Status
 
-- ✅ Problem investigation workflow implemented
-- ✅ Multi-platform integration (GitHub, GitLab, Reddit, etc.)
-- ✅ Platform-agnostic directory structure
-- ✅ Status tracking and documentation
-- ✅ Example implementation (Docker MCP Toolkit issues)
-- ✅ AI-designed workflow with feedback loop
+- ✅ Basic workflow implemented and tested
+- ✅ Multi-platform directory structure
+- ✅ Example investigation completed (Docker MCP Toolkit)
+- ✅ Status tracking and documentation working
 
 ---
 
-**Built for systematic problem solving and professional issue management.**  
-**Demonstrating that AI can design workflows, not just execute them.**
+**A practical tool for structured problem investigation and issue management.**  
+**Shows how AI-assisted workflows can make investigation faster and more thorough.**
