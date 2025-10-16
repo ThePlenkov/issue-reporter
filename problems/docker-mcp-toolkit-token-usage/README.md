@@ -77,7 +77,7 @@ This problem can be addressed through multiple complementary approaches:
 | Issue # | Title | Project | Status | Submitted | Last Updated | Notes |
 |---------|-------|---------|--------|-----------|--------------|-------|
 | [#186](https://github.com/docker/mcp-gateway/issues/186) | Tool Name Prefixes for MCP Server Identification | docker/mcp-gateway | submitted | 2025-10-16 | 2025-10-16 | Feature request for configurable tool name prefixes |
-| [#187](https://github.com/docker/mcp-gateway/issues/187) | Meta-MCP Server for Tool Discovery and Filtering | docker/mcp-gateway | submitted | 2025-10-16 | 2025-10-16 | Feature request for gateway-style MCP server |
+| [#187](https://github.com/docker/mcp-gateway/issues/187) | Meta-MCP Server for Tool Discovery and Filtering | docker/mcp-gateway | submitted | 2025-10-16 | 2025-10-16 | Feature request for gateway-style MCP server. [Comment added](https://github.com/docker/mcp-gateway/issues/187#issuecomment-3411423560) clarifying relationship to existing MCP Gateway & Registry |
 
 ## Related External Projects & Issues
 
